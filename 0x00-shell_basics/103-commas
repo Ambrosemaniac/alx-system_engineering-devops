@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Apv | awk '{printf "%s ", $0}' | sed 's/,$/\n/' | sed "1i . ../" | sed 's|/$|/ |'
+ls -am
