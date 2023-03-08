@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1AF | sed 's/\([^\/]\)$/\1\//' | tr '\n' ',' | sed 's/\(.*\),/\1\n/'
+ls -1Apv | awk '{printf "%s,", $0}' | sed 's/,$/\n/'
